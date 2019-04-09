@@ -48,17 +48,13 @@
         </form>
     </div>
     <div class="breadcrumbs">
-        @php
-            {{
+        <?php
             $tokens = explode('/', $path);
             $lastToken = array_pop($tokens);
             $path = [];
-            }}
-        @endphp
+         ?>
         @foreach($tokens as $k)
-            @php
-                {{ $path[] = $k; $current = implode('/', $path); }}
-            @endphp
+            <?php $path[] = $k; $current = implode('/', $path); ?>
                 <a href="/filemanager?path={{$current}}">
                     @if($path[0] == $current)
                         <span class="folderName">
@@ -77,9 +73,7 @@
     <ul class="data">
         <ul class="data animated img-gallery">
             @foreach($final['folders'] as $k)
-                @php
-                    {{ $r = explode('/', $k);  }}
-                @endphp
+               <?php $r = explode('/', $k); ?>
                 <li class="folders" id="folder-li-{!! str_replace(array(" ",".","(",")"),"-",end($r)) !!}">
                     <span class="folders">
                         <span onclick="location.href = '/filemanager?path={{ $k }}';" class="icon folder full"></span>
