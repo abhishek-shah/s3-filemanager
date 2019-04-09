@@ -43,3 +43,9 @@
 .form-control[readonly] {
     background-color: transparent;
 }
+button.btn-theme-color {
+    background-color: #39A7DE;
+    border-color: #39A7DE;
+    color: #FFF;
+    margin-top: 20px;
+}

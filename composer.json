@@ -17,5 +17,12 @@
         "psr-4": {
             "Hnrtech\\Filemanager\\": "src/"
         }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Hnrtech\\Filemanager\\FileManagerServiceProvider"
+            ]
+        }
     }
 }
