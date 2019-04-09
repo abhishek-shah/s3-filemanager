@@ -1,5 +1,5 @@
 {{--css--}}
-<link rel="stylesheet" href="css/filemanager.css?v=1.2">
+<link rel="stylesheet" href="/css/filemanager.css?v=1.2">
 
 {{--start model for S3 file manager --}}
 <div class="modal filemanager-iframe" id="fileManagerModal" tabindex="-1" role="dialog" aria-labelledby="fileManagerModalLabel"
