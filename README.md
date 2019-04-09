@@ -5,8 +5,8 @@ Steps to Install s3-File Manager
 
 Run following command to install package: composer require hnrtech/filemanager
 
-#Add class in Pulisher in app.php of config,         
-#Hnrtech\Filemanager\FileManagerServiceProvider::class,
+Add class in Publisher in app.php of config,         
+Hnrtech\Filemanager\FileManagerServiceProvider::class,
 
 #After successful installation run to publish required file to project, 
 #php artisan vendor:publish
