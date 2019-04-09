@@ -1,0 +1,45 @@
+.btn:not(.btn-secondary):not([class*=btn-outline-]):not(.btn-link) {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .12);
+    border: 0;
+}
+
+.waves-effect {
+    position: relative;
+    overflow: hidden;
+    user-select: none;
+}
+.btn-primary {
+    background-color: #2196F3;
+    border-color: #2196F3;
+}
+.btn {
+    display: inline-block;
+    line-height: 100%;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .6rem 1rem;
+    font-size: 1rem;
+    border-radius: 2px;
+    transition: all .2s ease-in-out;
+}
+.form-control {
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    resize: none;
+    -ms-overflow-style: none;
+}
+.form-control[readonly] {
+    opacity: .6;
+}
+.form-control[readonly] {
+    background-color: transparent;
+}
+.event-box .form-control {
+    font-size: 1.2rem;
+}
+.form-control[readonly] {
+    background-color: transparent;
+}

@@ -1,0 +1,82 @@
+@charset "utf-8";
+.filemanager-iframe {
+    position: fixed;
+    /*top: 50%;*/
+    /*left: 50%;*/
+    z-index: 9999;
+    background-color: #ffffff;
+    border: 1px solid #999;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    *border: 1px solid #999;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding-box;
+    background-clip: padding-box;
+    outline: none;
+    /*position: fixed;*/
+    left: 50px;
+    right: 50px;
+    width: auto;
+    margin: 0;
+    top: 10px !important;
+    height: 560px;
+}
+
+.filemanager-iframe.fade {
+    -webkit-transition: opacity .3s linear, top .3s ease-out;
+    -moz-transition: opacity .3s linear, top .3s ease-out;
+    -o-transition: opacity .3s linear, top .3s ease-out;
+    transition: opacity .3s linear, top .3s ease-out;
+    top: -25%;
+}
+
+.filemanager-iframe .modal-header {
+    padding: 9px 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.filemanager-iframe .modal-header .close {
+    margin-top: 2px;
+}
+
+.filemanager-iframe .modal-body {
+    overflow-y: auto;
+    max-height: 500px;
+    padding: 15px;
+    height: 460px;
+}
+
+.filemanager-iframe .modal-footer .btn + .btn {
+    margin-left: 5px;
+    margin-bottom: 0;
+}
+
+.filemanager-iframe .modal-footer .btn-group .btn + .btn {
+    margin-left: -1px;
+}
+
+.filemanager-iframe .modal-footer .btn-block + .btn-block {
+    margin-left: 0;
+}
+
+.filemanager-iframe .modal-header .close {
+    padding: 10px;
+    margin: -10px;
+}
+
+.filemanager-iframe:before {
+    display: none !important;
+}
+.editor-image {
+    border: 1px solid !important;
+    max-width: 500px !important;
+}
+
+.filemanager-iframe .modal-footer {
+    padding: 0px 35px;
+}
