@@ -16,6 +16,10 @@ class FileManagerServiceProvider extends ServiceProvider {
         $this->loadRoutesFrom(__DIR__.'/routes/web.php');
         $this->loadViewsFrom(__DIR__.'/views', 'filemanager');
 
+        $this->mergeConfigFrom(
+            __DIR__.'/config/path.php', 'path'
+        );
+
         $this->publishes([
             __DIR__.'/css/' => public_path('/css/'),
         ], 'public');
