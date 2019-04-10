@@ -19,6 +19,8 @@ Hnrtech\Filemanager\FileManagerServiceProvider::class
 php artisan vendor:publish
 ```
 
+- After publish, path.php file will be added in config folder set 'folder_name' as per require directory to fetch images 
+
 - To setup file upload use following,
 ```php 
 For Upload Button : {!! config('path.button') !!} 
@@ -66,7 +68,7 @@ AWS_BLOG_URL=
 AWS_URL=
 ```
 
-##### If you want to include file manager in trumbowyg text editor please include following:
+##### If you want to include file manager in trumbowyg editor please include following:
 ```php
 {!! config('path.editor') !!} and include js with following code,
 <script src="/js/file-manager/trumbowyg.js"></script>
