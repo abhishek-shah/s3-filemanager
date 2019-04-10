@@ -1,7 +1,5 @@
 # s3-filemanager
 
-[![Latest Version](https://img.shields.io/github/release/abhishek-shah/s3-filemanager.svg?style=flat-square)](https://github.com/abhishek-shah/s3-filemanager/releases)
-
 File Manager with S3 Intrgration and integrate with Trumbowyg Editor
 
 ## Installing s3-File Manager
