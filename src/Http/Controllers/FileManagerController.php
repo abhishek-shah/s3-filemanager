@@ -14,16 +14,11 @@ class FileManagerController extends Controller
 {
     public function index()
     {
-//        if ($this->client_id()) {
-//            $client_id = $this->client_id();
-//        } else {
-//            $client_id = $this->get_secondary_user()['client_id'];
-//        }
-//        $folder_name = config('path.folder_name');
-        $folder_name = config('path.folder_name');
+
         $path = $_GET;
         $files = [];
 
+        $client_id = $path['path'];
         $folders = Storage::directories($path['path']);
         $tempFiles = Storage::files($path['path']);
 
@@ -49,7 +44,7 @@ class FileManagerController extends Controller
             'files' => $files
         ];
 
-        return view('filemanager::file-manager.index')->with(array('events'=> 'true','final' => $final, 'path' => $path['path'], 'folder_path' => $path['path'],'client_id' => $folder_name));
+        return view('filemanager::file-manager.index')->with(array('events'=> 'true','final' => $final, 'path' => $path['path'], 'folder_path' => $path['path'],'client_id' => $client_id));
 
     }
 
