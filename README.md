@@ -66,7 +66,7 @@ AWS_BLOG_URL=
 AWS_URL=
 ```
 
-#####If you want to include file manager in trumbowyg text editor please include following:
+##### If you want to include file manager in trumbowyg text editor please include following:
 ```php
 {!! config('path.editor') !!} and include js with following code,
 <script src="/js/file-manager/trumbowyg.js"></script>
