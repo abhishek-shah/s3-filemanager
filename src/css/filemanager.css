@@ -1,8 +1,6 @@
 @charset "utf-8";
 .filemanager-iframe {
     position: fixed;
-    /*top: 50%;*/
-    /*left: 50%;*/
     z-index: 9999;
     background-color: #ffffff;
     border: 1px solid #999;

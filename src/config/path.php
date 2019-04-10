@@ -7,7 +7,7 @@
  */
 
 return [
-    'folder_name' => '1',
+    'folder_name' => '',
     'button' => '<a href="javascript:;" id="image-upload" class="btn btn-primary" name="upload">Upload</a>',
     'input' => '<input type="text" class="form-control" name="new_images" id="images" value="" readonly>',
     'editor' => '<textarea name="discription" id="desc"></textarea>',
